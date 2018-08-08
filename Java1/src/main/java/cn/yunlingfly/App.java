@@ -68,7 +68,7 @@ public class App extends Thread {
                 flag = true;
                 try {
                     sleep(5000);    // 休息5s
-                } catch (InterruptedException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
