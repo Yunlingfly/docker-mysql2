@@ -22,6 +22,6 @@ services:
       PORT: "3306"
       DRIVERCLASSNAME: "com.mysql.jdbc.Driver"
       DBNAME: "persontest"
-      URL: "jdbc:mysql://192.168.99.100:3306/persontest?useSSL=false"
+      URL: "jdbc:mysql://192.168.99.100:3306/persontest?useSSL=false&characterEncoding=utf8"
       USERNAME: "root"
       PASSWORD: "root"

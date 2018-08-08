@@ -4,3 +4,4 @@
 # 然后，只需要一个简单的命令，就可以创建并启动你配置的所有服务。
 
 docker-compose up
+docker-compose stop $(docker ps -a -q)
