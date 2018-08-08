@@ -79,10 +79,11 @@ public class App extends Thread {
     private void selectAll() {
         Connection conn = getConn();
         String sql = "SELECT id,username FROM userinfo";
-        Statement pstmt = null;
+        Statement st;
         List<Person> list = new ArrayList<>();
         try {
-            ResultSet rs = pstmt.executeQuery(sql);
+            st=conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
             System.out.println("============================");
             while (rs.next()) {
                 Person p = new Person();
